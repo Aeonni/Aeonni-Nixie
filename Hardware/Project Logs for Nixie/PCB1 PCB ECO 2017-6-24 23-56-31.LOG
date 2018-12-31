@@ -1,0 +1,51 @@
+Change Component Designator: OldDesignator=H? NewDesignator=H1
+Added Component: Designator=R41(R0805)
+Added Component: Designator=R42(R0805)
+Added Component: Designator=R43(R0805)
+Added Pin To Net: NetName=V5 Pin=IC1-10
+Added Pin To Net: NetName=V5 Pin=IC2-10
+Added Pin To Net: NetName=V5 Pin=IC3-10
+Added Pin To Net: NetName=V5 Pin=IC4-10
+Added Pin To Net: NetName=V5 Pin=IC5-10
+Added Pin To Net: NetName=V5 Pin=IC6-10
+Added Pin To Net: NetName=V5 Pin=IC7-10
+Added Pin To Net: NetName=V5 Pin=IC8-10
+Added Pin To Net: NetName=V5 Pin=R41-2
+Added Pin To Net: NetName=V5 Pin=R42-2
+Added Pin To Net: NetName=V5 Pin=R43-2
+Added Pin To Net: NetName=NetIC1_9 Pin=IC1-9
+Added Pin To Net: NetName=NetIC1_9 Pin=IC2-14
+Added Net: Name=NetIC1_9
+Added Pin To Net: NetName=NetIC2_9 Pin=IC2-9
+Added Pin To Net: NetName=NetIC2_9 Pin=IC3-14
+Added Net: Name=NetIC2_9
+Added Pin To Net: NetName=NetIC3_9 Pin=IC3-9
+Added Pin To Net: NetName=NetIC3_9 Pin=IC4-14
+Added Net: Name=NetIC3_9
+Added Pin To Net: NetName=OE1# Pin=H1-4
+Added Pin To Net: NetName=OE1# Pin=IC1-13
+Added Pin To Net: NetName=OE1# Pin=IC2-13
+Added Pin To Net: NetName=OE1# Pin=IC3-13
+Added Pin To Net: NetName=OE1# Pin=IC4-13
+Added Net: Name=OE1#
+Added Pin To Net: NetName=RCK1# Pin=H1-2
+Added Pin To Net: NetName=RCK1# Pin=H1-3
+Added Pin To Net: NetName=RCK1# Pin=IC1-11
+Added Pin To Net: NetName=RCK1# Pin=IC1-12
+Added Pin To Net: NetName=RCK1# Pin=IC2-11
+Added Pin To Net: NetName=RCK1# Pin=IC2-12
+Added Pin To Net: NetName=RCK1# Pin=IC3-11
+Added Pin To Net: NetName=RCK1# Pin=IC3-12
+Added Pin To Net: NetName=RCK1# Pin=IC4-11
+Added Pin To Net: NetName=RCK1# Pin=IC4-12
+Added Pin To Net: NetName=RCK1# Pin=R41-1
+Added Pin To Net: NetName=RCK1# Pin=R42-1
+Added Net: Name=RCK1#
+Added Pin To Net: NetName=SD1# Pin=H1-1
+Added Pin To Net: NetName=SD1# Pin=IC1-14
+Added Pin To Net: NetName=SD1# Pin=R43-1
+Added Net: Name=SD1#
+Added Member To Class: ClassName=Sheet1 Member=Component R41 1K
+Added Member To Class: ClassName=Sheet1 Member=Component R42 1K
+Added Member To Class: ClassName=Sheet1 Member=Component R43 1K
+Added Room: Name=Sheet1

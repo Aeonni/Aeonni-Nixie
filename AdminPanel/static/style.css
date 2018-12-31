@@ -1,0 +1,141 @@
+.nixie {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+}
+
+.bg {
+    background-image: url(/static/bg.jpeg);
+    background-repeat: no-repeat ; 
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+
+.info {
+
+    position: absolute;
+
+    font-size: 20px;
+
+    text-align: center;
+
+    /* color: rgb(255, 190, 71); */
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 50px;
+    top: 60%;
+
+}
+
+.sid {
+    position: absolute;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 55%;
+    height: 25%;
+    bottom: 10%;
+
+    text-align: center;
+    font-size: 25px;
+    /* color: rgb(255, 190, 71); */
+    color: rgb(106, 77, 50);
+}
+
+.login-area {
+
+    position: absolute;
+
+    /* color: rgb(255, 190, 71); */
+    background-color: rgba(87, 71, 56, 0.2);
+    z-index: -1;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 55%;
+    height: 25%;
+    top: 55%;
+
+    border-radius: 10px 10px 10px 10px;
+    border: 3px;
+    border-color: black;
+        /* box-shadow: #666 0px 5px 30px -10px; */
+
+}
+
+.passwd {
+    position: absolute;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 20px;
+
+    text-align: center;
+
+    color: rgb(255, 190, 71);
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 50px;
+    top: 25%;
+
+    background-color: rgba(87, 71, 56, 0.2);
+
+    outline:none;
+
+    border:0;
+
+}
+
+.way {
+
+position: absolute;
+
+background-color: rgba(87, 71, 56, 0.2);
+border-radius: 10px 10px 10px 10px;
+
+font-size: 30px;
+
+text-align: center;
+
+color:rgb(253, 231, 189);
+
+margin: 0 auto;
+left: 0;
+right: 0;
+width: 30%;
+max-width: 100px;
+/* height: 50px; */
+top: 10%;
+bottom: 40%;
+
+
+}
+
+.info {
+
+    position: absolute;
+
+    font-size: 16px;
+
+    text-align: center;
+
+    color: rgb(106, 77, 50);
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 50px;
+    top: 5%;
+    
+
+}

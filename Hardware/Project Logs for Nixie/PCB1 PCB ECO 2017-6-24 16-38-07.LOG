@@ -1,0 +1,29 @@
+Removed Pin From Net: NetName=P2 Pin=Q1-3
+Removed Pin From Net: NetName=P3 Pin=Q4-3
+Removed Pin From Net: NetName=P5 Pin=Q6-3
+Removed Pin From Net: NetName=P7 Pin=Q8-3
+Added Component: Designator=R01(R0)
+Added Component: Designator=R04(R0)
+Added Component: Designator=R06(R0)
+Added Component: Designator=R08(R0)
+Added Pin To Net: NetName=P2 Pin=R01-2
+Added Pin To Net: NetName=P3 Pin=R04-2
+Added Pin To Net: NetName=P5 Pin=R06-2
+Added Pin To Net: NetName=P7 Pin=R08-2
+Added Pin To Net: NetName=NetQ1_3 Pin=Q1-3
+Added Pin To Net: NetName=NetQ1_3 Pin=R01-1
+Added Net: Name=NetQ1_3
+Added Pin To Net: NetName=NetQ4_3 Pin=Q4-3
+Added Pin To Net: NetName=NetQ4_3 Pin=R04-1
+Added Net: Name=NetQ4_3
+Added Pin To Net: NetName=NetQ6_3 Pin=Q6-3
+Added Pin To Net: NetName=NetQ6_3 Pin=R06-1
+Added Net: Name=NetQ6_3
+Added Pin To Net: NetName=NetQ8_3 Pin=Q8-3
+Added Pin To Net: NetName=NetQ8_3 Pin=R08-1
+Added Net: Name=NetQ8_3
+Added Member To Class: ClassName=Sheet1 Member=Component R01 JUMPER
+Added Member To Class: ClassName=Sheet1 Member=Component R04 JUMPER
+Added Member To Class: ClassName=Sheet1 Member=Component R06 JUMPER
+Added Member To Class: ClassName=Sheet1 Member=Component R08 JUMPER
+Added Room: Name=Sheet1

@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=RCK1# Pin=H1-3
+Removed Pin From Net: NetName=RCK1# Pin=IC1-11
+Removed Pin From Net: NetName=RCK1# Pin=IC2-11
+Removed Pin From Net: NetName=RCK1# Pin=IC3-11
+Removed Pin From Net: NetName=RCK1# Pin=IC4-11
+Removed Pin From Net: NetName=RCK1# Pin=R41-1
+Added Pin To Net: NetName=SCK1# Pin=H1-3
+Added Pin To Net: NetName=SCK1# Pin=IC1-11
+Added Pin To Net: NetName=SCK1# Pin=IC2-11
+Added Pin To Net: NetName=SCK1# Pin=IC3-11
+Added Pin To Net: NetName=SCK1# Pin=IC4-11
+Added Pin To Net: NetName=SCK1# Pin=R41-1
+Added Net: Name=SCK1#
+Added Room: Name=Sheet1

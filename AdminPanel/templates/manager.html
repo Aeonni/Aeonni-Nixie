@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Aeonni-Nixie Control Panel</title>
+
+    <link rel="shortcut icon" href="static/favicon.ICO" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="static/custom_icon.png">
+    <link rel="apple-touch-icon" href="static/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/touch-icon-ipad-retina.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="static/jquery-3.3.1.min.js"></script>
+</head>
+
+<body style="margin: 0;">
+    <div class="header">
+        <a class="title"> Aeonni-Nixie Control Panel</a>
+        <p style="position: absolute; right: 25px; color: #d4acad;" onclick="window.location.replace('/logout')"> User: {{user}}, Report time: {{time}}</p>
+    </div>
+
+
+    <div class="content">
+        {% for p in procs %}
+        <div class="container">
+            <div class="card" style="left: 0; background-color: {{p[0].colors.bg}};">
+                <a class="card-title" style="border-bottom: 1px solid {{p[0].colors.line}}">{{p[0].name}}</a>
+                <div class="img" style="background-color: {{p[0].colors.logo}}" {% if p[0].state == 'stopped'%} onclick="openapp('{{p[0].name}}')" {% endif %}>{% if p[0].logo != 'None' %}<img src="{{p[0].logo}}"/>{% endif %}</div>
+                <div class="card-info">
+                    <a class="card-p">Version: {{p[0].ver}}</a>
+                    <a class="card-p" onclick="sw('{{p[0].state}}', '{{p[0].name}}')">State: <i  class="{{icon_dict[p[0].state][0]}}" style="{{icon_dict[p[0].state][1]}}" ></i></a>
+                    <a class="card-p">Operate: {{p[0].op}}</a>
+                </div>
+            </div>
+            
+            <div class="card" style="right: 0; background-color: {{p[1].colors.bg}}; display: {{p[1].visiable}};">
+                <a class="card-title" style="border-bottom: 1px solid {{p[1].colors.line}}">{{p[1].name}}</a>
+                <div class="img" style="background-color: {{p[1].colors.logo}}" {% if p[1].state == 'stopped'%} onclick="openapp('{{p[1].name}}')" {% endif %}>{% if p[1].logo != 'None' %}<img src="{{p[1].logo}}"/>{% endif %}</div>
+                <div class="card-info">
+                    <a class="card-p">Version: {{p[1].ver}}</a>
+                    <a class="card-p" onclick="sw('{{p[1].state}}', '{{p[1].name}}')">State: <i  class="{{icon_dict[p[1].state][0]}}" style="{{icon_dict[p[1].state][1]}}" ></i></a>
+                    <a class="card-p">Operate: {{p[1].op}}</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+        <div class="container" style="height: 50px">
+            <p style="position: relative; left: 40px; color: #777; font-size: 12px;" id="txt"></p>
+        </div>
+
+        <div class="footer">
+            <p style="position: absolute; left: 0; margin: 0; color: #777;">©2016-2018&nbsp;Aeonni.COM&nbsp;</p>
+            <p style="position: absolute; right: 0; margin: 0; color: #8f83bc;">Page info: Aeonni-Nixie Control Panel</p>
+        </div>
+    </div>
+
+    <div class="alt_box" id="alt_box_main" hidden="true">
+        <img class="alt_img" id="alt_box_img" src="static/question-circle-regular.svg"/>
+        <p class="alt_button" style="bottom:110px; background-color:white;"  id="alt_box_txt">是否要执行操作：打开 </p>
+        <div class="alt_button" style="background-color:pink;" id="alt_bt1" onclick="Canceled()">
+            <p class="alt_txt">Cancel</p>
+        </div>
+        <div class="alt_button" style="bottom:80px; background-color:lightgreen;" id="alt_bt2" onclick="Confirmed('x')">
+            <p class="alt_txt">OK</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    var cu_cmd = "";
+
+    function sw(state, m_name) {
+        if(state == 'Running'){
+            alert("State Can't be changed!");
+            document.getElementById('txt').innerHTML = "State Can't be changed!"
+            setTimeout(function() {window.location.replace('/');}, 1500);
+        }
+        if(state == 'running'){
+            // alert("Turning off the MODULE!");
+            closeapp(m_name);
+        }
+        if(state == 'stopped'){
+            // alert("Turning on the MODULE!");
+            openapp(m_name);
+        }
+        
+    }
+
+    function openapp(cmd) {
+        document.getElementById('alt_box_main').hidden = false;
+        document.getElementById('alt_box_img').src = 'static/question-circle-regular.svg';
+        document.getElementById('alt_box_txt').innerHTML = 'You are OPENING module: '+cmd;
+        document.getElementById('alt_bt2').onclick=function(){Confirmed('open')};
+        cu_cmd = cmd;
+    }
+
+    function closeapp(cmd) {
+        document.getElementById('alt_box_main').hidden = false;
+        document.getElementById('alt_box_img').src = 'static/question-circle-regular.svg';
+        document.getElementById('alt_box_txt').innerHTML = 'You are CLOSEING module: '+cmd;
+        document.getElementById('alt_bt2').onclick=function(){Confirmed('close')};
+        cu_cmd = cmd;
+    }
+
+    function Canceled() {
+        document.getElementById('alt_box_main').hidden = true;
+        cu_cmd = "";
+    }
+
+    function Confirmed(c) {
+        // document.getElementById('alt_box_main').hidden = false;
+        document.getElementById('alt_box_img').src = 'static/ajax.gif';
+        document.getElementById('alt_box_txt').innerHTML = 'Please wait ...';
+        document.getElementById('alt_bt2').style.backgroundColor = '#aaaaaa';
+        document.getElementById('alt_bt1').style.backgroundColor = '#aaaaaa';
+        document.getElementById('alt_bt1').onclick="";
+        document.getElementById('alt_bt2').onclick="";
+        if(c == 'open') {
+            do_openapp(cu_cmd);
+        }
+        if(c == 'close') {
+            do_closeapp(cu_cmd);
+        }
+    }
+
+    function do_openapp(cmd) {
+
+        $.get('/open', {'name': cmd}, function(r){
+            rp = $.parseJSON( r );
+            if(rp.success == true) {
+                setTimeout(function() {window.location.replace('/');}, 500);
+            }
+            if(rp.success == false) {
+                document.getElementById('alt_box_img').src = 'data:image/png;base64,'+rp.img;
+                setTimeout(function() {do_openapp(cmd);}, 1000);
+            }
+        });
+    }
+
+    function do_closeapp(cmd) {
+
+        $.get('/close', {'name': cmd}, function(r){
+            if($.parseJSON( r ).success) {
+                setTimeout(function() {window.location.replace('/');}, 500);
+            }
+        });
+    }
+
+
+</script>
+
+<style>
+    .header {
+        background-color: rgb(140, 100, 80);
+        /* position: fixed; */
+        /* height: 33%; */
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 33vh;
+        /* box-shadow: #666 0px 5px 30px -10px; */
+    }
+
+    .title {
+        position: relative;
+        text-align: center;
+        font-size: 32px;
+        font-family: Hei;
+        color:  rgb(253, 231, 189);
+        left: 25px;
+        top: 20px;
+        margin: auto;
+    }
+
+    .content {
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        top: 100px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        /* height: 100%; */
+        /* bottom: 10px; */
+
+        width: 700px;
+        box-shadow: #666 0px 5px 20px -10px;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .container {
+        /* background-color: rgb(25, 255, 255); */
+        position: relative;
+        width: 650px;
+        height: 180px;
+        left: 0;
+        right: 0;
+        margin: 20px auto;
+
+    }
+
+    .card {
+        /* background-color: rgb(255, 255, 255); */
+        position: absolute;
+        width: 300px;
+        height: 160px;
+        top: 0;
+        margin: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: #666 0px 2px 15px -10px;
+        border: 1px solid #ddd
+    }
+
+    .card-title {
+        position: relative;
+        text-align: center;
+        font-size: 24px;
+        font-family: Hei;
+        left: 35px;
+        top: 20px;
+        margin: auto;
+        border-bottom: 1px solid #ddd
+    }
+
+    .card-p {
+        position: relative;
+        text-align: center;
+        font-size: 16px;
+        font-family: Hei;
+        left: 0px;
+        /* top: 5px; */
+        /* margin: auto; */
+    }
+
+    .card-info {
+        position: absolute;
+        /* background-color: rgb(127, 236, 255); */
+        width: 130px;
+        left: 140px;
+        bottom: 14px;
+        height: 80px;
+    }
+
+    .img {
+        position: absolute;
+        background-color: aquamarine;
+        width: 80px;
+        height: 80px;
+        bottom: 20px;
+        left: 35px;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .footer {
+        /* background-color: rgb(255, 255, 25); */
+        top: 100px;
+        position: relative;
+        width: 90%;
+        /* left: 10px; */
+        margin: auto;
+        height: 50px;
+    }
+
+    .alt_box {
+        position: fixed;
+        /* background-color: rgb(127, 236, 255); */
+        width: 320px;
+        height: 460px;
+
+        margin:auto;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+
+        background-color: white;
+        opacity:0.85;
+
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: #666 0px 2px 15px -10px;
+        border: 1px solid #ddd
+    }
+
+    .alt_img {
+        position: absolute;
+
+        width: 240px;
+        height: 240px;
+        /* color: #d4acad; */
+        left:0;
+        right:0;
+        top:30px;
+        margin:auto;
+    }
+
+    .alt_button {
+        position: absolute;
+
+        height: 50px;
+        margin:auto;
+        left:20px;
+        right:20px;
+        bottom: 20px;
+        background-color: #666;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .alt_txt {
+        position: absolute;
+
+        text-align : center;
+
+        font-size: 24px;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        margin:auto;
+        left:0;
+        right:0;
+        top:12px;
+        bottom:0;
+
+        color: white;
+    }
+</style>

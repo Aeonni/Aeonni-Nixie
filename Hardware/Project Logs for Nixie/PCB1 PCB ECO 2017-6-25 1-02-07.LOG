@@ -1,0 +1,50 @@
+Added Component: Designator=H2(HDR1X4)
+Added Component: Designator=H3(HDR1X4)
+Added Component: Designator=R44(R0805)
+Added Component: Designator=R45(R0805)
+Added Component: Designator=R46(R0805)
+Added Pin To Net: NetName=V170 Pin=H3-1
+Added Pin To Net: NetName=V5 Pin=H3-3
+Added Pin To Net: NetName=GND Pin=H3-4
+Added Pin To Net: NetName=V5 Pin=R44-2
+Added Pin To Net: NetName=V5 Pin=R45-2
+Added Pin To Net: NetName=V5 Pin=R46-2
+Added Pin To Net: NetName=NetIC5_14 Pin=IC5-14
+Added Pin To Net: NetName=NetIC5_14 Pin=IC6-9
+Added Net: Name=NetIC5_14
+Added Pin To Net: NetName=NetIC6_14 Pin=IC6-14
+Added Pin To Net: NetName=NetIC6_14 Pin=IC7-9
+Added Net: Name=NetIC6_14
+Added Pin To Net: NetName=NetIC7_14 Pin=IC7-14
+Added Pin To Net: NetName=NetIC7_14 Pin=IC8-9
+Added Net: Name=NetIC7_14
+Added Pin To Net: NetName=OE2# Pin=H2-4
+Added Pin To Net: NetName=OE2# Pin=IC5-13
+Added Pin To Net: NetName=OE2# Pin=IC6-13
+Added Pin To Net: NetName=OE2# Pin=IC7-13
+Added Pin To Net: NetName=OE2# Pin=IC8-13
+Added Net: Name=OE2#
+Added Pin To Net: NetName=RCK2# Pin=H2-2
+Added Pin To Net: NetName=RCK2# Pin=IC5-12
+Added Pin To Net: NetName=RCK2# Pin=IC6-12
+Added Pin To Net: NetName=RCK2# Pin=IC7-12
+Added Pin To Net: NetName=RCK2# Pin=IC8-12
+Added Pin To Net: NetName=RCK2# Pin=R45-1
+Added Net: Name=RCK2#
+Added Pin To Net: NetName=SCK2# Pin=H2-3
+Added Pin To Net: NetName=SCK2# Pin=IC5-11
+Added Pin To Net: NetName=SCK2# Pin=IC6-11
+Added Pin To Net: NetName=SCK2# Pin=IC7-11
+Added Pin To Net: NetName=SCK2# Pin=IC8-11
+Added Pin To Net: NetName=SCK2# Pin=R44-1
+Added Net: Name=SCK2#
+Added Pin To Net: NetName=SD2# Pin=H2-1
+Added Pin To Net: NetName=SD2# Pin=IC8-14
+Added Pin To Net: NetName=SD2# Pin=R46-1
+Added Net: Name=SD2#
+Added Member To Class: ClassName=Sheet1 Member=Component H2 Header
+Added Member To Class: ClassName=Sheet1 Member=Component H3 Header
+Added Member To Class: ClassName=Sheet1 Member=Component R44 1K
+Added Member To Class: ClassName=Sheet1 Member=Component R45 1K
+Added Member To Class: ClassName=Sheet1 Member=Component R46 1K
+Added Room: Name=Sheet1

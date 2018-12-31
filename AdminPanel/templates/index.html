@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <title>Aeonni-Nixie Login</title>
+</head>
+
+
+<body class="bg">
+    <img class="nixie" src="/static/Nixie.png">
+
+    
+
+    <div class='login-area' id='la'>
+        <p class='info' id='info'>
+            {% if nfc %}
+            或将 Master Key 置于感应位置... 剩余 <span id='tspan'>20</span> 秒
+            {% else %}
+            NFC 认证不可用
+            {% endif %}
+        </p>
+
+        <form action="" method="POST" id="forms">
+            {% if pwdERR %}
+            <input id="pwd" name="pwd" class="passwd" type="password" placeholder="密 码 输 入 错 误" onkeypress="submitForm()">
+            {% else %}
+            <input id="pwd" name="pwd" class="passwd" type="password" placeholder="Login to Aeonni-Nixie" onkeypress="submitForm()">
+            {% endif %}
+            <input type="hidden" name='sid' value="{{sid}}">
+        </form>
+
+        <p class="sid" id='sid'>
+            {{sid}}
+        </p>
+
+        <p class='way' id='way' hidden='true'>
+            NFC
+        </p>
+
+    </div>
+
+    
+    
+
+</body>
+</html>
+
+<script>
+
+var oDate = new Date();
+var oldTime = oDate.getTime();
+
+{% if nfc %}
+
+var delayTime = 20;
+
+function cntdown() {
+    var nDate = new Date();
+    var nTime = delayTime - Math.floor((nDate.getTime() - oldTime)/1000);
+
+    if(nTime <= 0) {
+        document.getElementById('info').innerHTML = '';
+        clearInterval(timer);
+        // login_reload('NFC');
+        return 0;
+    }
+
+    $.get('/if-jump', {'sid': {{sid}}}, function(r){
+        if($.parseJSON( r ).login) {
+            login_reload('NFC');
+            document.getElementById('info').innerHTML = '';
+            clearInterval(timer);
+        }
+    });
+
+    
+
+    var tSpan = document.getElementById('tspan');
+    tSpan.innerHTML = nTime;
+}
+
+var timer = setInterval(cntdown, 500);
+
+{% else %}
+var delayTime = 0;
+{% endif %}
+
+
+function submitForm() {
+    if(event.keyCode ==13){
+        console.log(event.keyCode)
+        var form = document.getElementById('forms');
+        form.submit();
+    }
+}
+
+
+
+function login_reload(t) {
+    document.getElementById('sid').innerHTML = '登陆成功，正在跳转...';
+    document.getElementById('pwd').hidden = true;
+    document.getElementById('info').hidden = true;
+    document.getElementById('way').hidden = false;
+    document.getElementById('way').innerHTML = t;
+    setTimeout(function() {window.location.replace('/');}, 1500);
+}
+
+
+
+
+</script>
+
+
+<style>
+
+{% if pwdERR %}
+
+input:-ms-input-placeholder{color:red;}/* Internet Explorer 10+ */ 
+input::-webkit-input-placeholder{color:red;}/* WebKit browsers */
+input::-moz-placeholder{color:red;}/* Mozilla Firefox 4 to 18 */ 
+input:-moz-placeholder{color: red;}/* Mozilla Firefox 19+ */ 
+
+{% else %}
+
+input:-ms-input-placeholder{color:rgb(253, 231, 189);}/* Internet Explorer 10+ */ 
+input::-webkit-input-placeholder{color:rgb(253, 231, 189);}/* WebKit browsers */
+input::-moz-placeholder{color:rgb(253, 231, 189);}/* Mozilla Firefox 4 to 18 */ 
+input:-moz-placeholder{color: rgb(253, 231, 189);}/* Mozilla Firefox 19+ */ 
+
+{% endif %}
+
+</style>

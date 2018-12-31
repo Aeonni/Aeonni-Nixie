@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=SCK2# Pin=IC5-11
+Removed Pin From Net: NetName=SCK2# Pin=IC6-11
+Removed Pin From Net: NetName=SCK2# Pin=IC7-11
+Added Component: Designator=R09(R0)
+Added Component: Designator=R010(R0)
+Added Component: Designator=R011(R0)
+Added Pin To Net: NetName=SCK2# Pin=R09-1
+Added Pin To Net: NetName=SCK2# Pin=R010-1
+Added Pin To Net: NetName=SCK2# Pin=R011-1
+Added Pin To Net: NetName=NetIC5_11 Pin=IC5-11
+Added Pin To Net: NetName=NetIC5_11 Pin=R09-2
+Added Net: Name=NetIC5_11
+Added Pin To Net: NetName=NetIC6_11 Pin=IC6-11
+Added Pin To Net: NetName=NetIC6_11 Pin=R010-2
+Added Net: Name=NetIC6_11
+Added Pin To Net: NetName=NetIC7_11 Pin=IC7-11
+Added Pin To Net: NetName=NetIC7_11 Pin=R011-2
+Added Net: Name=NetIC7_11
+Added Member To Class: ClassName=Sheet1 Member=Component R09 JUMPER
+Added Member To Class: ClassName=Sheet1 Member=Component R010 JUMPER
+Added Member To Class: ClassName=Sheet1 Member=Component R011 JUMPER
+Added Room: Name=Sheet1

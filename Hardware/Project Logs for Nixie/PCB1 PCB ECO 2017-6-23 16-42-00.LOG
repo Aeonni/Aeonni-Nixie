@@ -1,0 +1,285 @@
+Added Component: Designator=K155-1(DIP16)
+Added Component: Designator=K155-2(DIP16)
+Added Component: Designator=K155-3(DIP16)
+Added Component: Designator=K155-4(DIP16)
+Added Component: Designator=K155-5(DIP16)
+Added Component: Designator=K155-6(DIP16)
+Added Component: Designator=K155-7(DIP16)
+Added Component: Designator=K155-8(DIP16)
+Added Component: Designator=Nixie1(IN-12)
+Added Component: Designator=Nixie2(IN-12)
+Added Component: Designator=Nixie3(IN-12)
+Added Component: Designator=Nixie4(IN-12)
+Added Component: Designator=Nixie5(IN-12)
+Added Component: Designator=Nixie6(IN-12)
+Added Component: Designator=Nixie7(IN-12)
+Added Component: Designator=Nixie8(IN-12)
+Added Pin To Net: NetName=GND Pin=K155-1-12
+Added Pin To Net: NetName=GND Pin=K155-2-12
+Added Pin To Net: NetName=GND Pin=K155-3-12
+Added Pin To Net: NetName=GND Pin=K155-4-12
+Added Pin To Net: NetName=GND Pin=K155-5-12
+Added Pin To Net: NetName=GND Pin=K155-6-12
+Added Pin To Net: NetName=GND Pin=K155-7-12
+Added Pin To Net: NetName=GND Pin=K155-8-12
+Added Net: Name=GND
+Added Pin To Net: NetName=NetK155-1_1 Pin=K155-1-1
+Added Pin To Net: NetName=NetK155-1_1 Pin=Nixie1-4
+Added Net: Name=NetK155-1_1
+Added Pin To Net: NetName=NetK155-1_2 Pin=K155-1-2
+Added Pin To Net: NetName=NetK155-1_2 Pin=Nixie1-3
+Added Net: Name=NetK155-1_2
+Added Pin To Net: NetName=NetK155-1_8 Pin=K155-1-8
+Added Pin To Net: NetName=NetK155-1_8 Pin=Nixie1-10
+Added Net: Name=NetK155-1_8
+Added Pin To Net: NetName=NetK155-1_9 Pin=K155-1-9
+Added Pin To Net: NetName=NetK155-1_9 Pin=Nixie1-9
+Added Net: Name=NetK155-1_9
+Added Pin To Net: NetName=NetK155-1_10 Pin=K155-1-10
+Added Pin To Net: NetName=NetK155-1_10 Pin=Nixie1-5
+Added Net: Name=NetK155-1_10
+Added Pin To Net: NetName=NetK155-1_11 Pin=K155-1-11
+Added Pin To Net: NetName=NetK155-1_11 Pin=Nixie1-6
+Added Net: Name=NetK155-1_11
+Added Pin To Net: NetName=NetK155-1_13 Pin=K155-1-13
+Added Pin To Net: NetName=NetK155-1_13 Pin=Nixie1-8
+Added Net: Name=NetK155-1_13
+Added Pin To Net: NetName=NetK155-1_14 Pin=K155-1-14
+Added Pin To Net: NetName=NetK155-1_14 Pin=Nixie1-7
+Added Net: Name=NetK155-1_14
+Added Pin To Net: NetName=NetK155-1_15 Pin=K155-1-15
+Added Pin To Net: NetName=NetK155-1_15 Pin=Nixie1-11
+Added Net: Name=NetK155-1_15
+Added Pin To Net: NetName=NetK155-1_16 Pin=K155-1-16
+Added Pin To Net: NetName=NetK155-1_16 Pin=Nixie1-2
+Added Net: Name=NetK155-1_16
+Added Pin To Net: NetName=NetK155-2_1 Pin=K155-2-1
+Added Pin To Net: NetName=NetK155-2_1 Pin=Nixie2-4
+Added Net: Name=NetK155-2_1
+Added Pin To Net: NetName=NetK155-2_2 Pin=K155-2-2
+Added Pin To Net: NetName=NetK155-2_2 Pin=Nixie2-3
+Added Net: Name=NetK155-2_2
+Added Pin To Net: NetName=NetK155-2_8 Pin=K155-2-8
+Added Pin To Net: NetName=NetK155-2_8 Pin=Nixie2-10
+Added Net: Name=NetK155-2_8
+Added Pin To Net: NetName=NetK155-2_9 Pin=K155-2-9
+Added Pin To Net: NetName=NetK155-2_9 Pin=Nixie2-9
+Added Net: Name=NetK155-2_9
+Added Pin To Net: NetName=NetK155-2_10 Pin=K155-2-10
+Added Pin To Net: NetName=NetK155-2_10 Pin=Nixie2-5
+Added Net: Name=NetK155-2_10
+Added Pin To Net: NetName=NetK155-2_11 Pin=K155-2-11
+Added Pin To Net: NetName=NetK155-2_11 Pin=Nixie2-6
+Added Net: Name=NetK155-2_11
+Added Pin To Net: NetName=NetK155-2_13 Pin=K155-2-13
+Added Pin To Net: NetName=NetK155-2_13 Pin=Nixie2-8
+Added Net: Name=NetK155-2_13
+Added Pin To Net: NetName=NetK155-2_14 Pin=K155-2-14
+Added Pin To Net: NetName=NetK155-2_14 Pin=Nixie2-7
+Added Net: Name=NetK155-2_14
+Added Pin To Net: NetName=NetK155-2_15 Pin=K155-2-15
+Added Pin To Net: NetName=NetK155-2_15 Pin=Nixie2-11
+Added Net: Name=NetK155-2_15
+Added Pin To Net: NetName=NetK155-2_16 Pin=K155-2-16
+Added Pin To Net: NetName=NetK155-2_16 Pin=Nixie2-2
+Added Net: Name=NetK155-2_16
+Added Pin To Net: NetName=NetK155-3_1 Pin=K155-3-1
+Added Pin To Net: NetName=NetK155-3_1 Pin=Nixie3-4
+Added Net: Name=NetK155-3_1
+Added Pin To Net: NetName=NetK155-3_2 Pin=K155-3-2
+Added Pin To Net: NetName=NetK155-3_2 Pin=Nixie3-3
+Added Net: Name=NetK155-3_2
+Added Pin To Net: NetName=NetK155-3_8 Pin=K155-3-8
+Added Pin To Net: NetName=NetK155-3_8 Pin=Nixie3-10
+Added Net: Name=NetK155-3_8
+Added Pin To Net: NetName=NetK155-3_9 Pin=K155-3-9
+Added Pin To Net: NetName=NetK155-3_9 Pin=Nixie3-9
+Added Net: Name=NetK155-3_9
+Added Pin To Net: NetName=NetK155-3_10 Pin=K155-3-10
+Added Pin To Net: NetName=NetK155-3_10 Pin=Nixie3-5
+Added Net: Name=NetK155-3_10
+Added Pin To Net: NetName=NetK155-3_11 Pin=K155-3-11
+Added Pin To Net: NetName=NetK155-3_11 Pin=Nixie3-6
+Added Net: Name=NetK155-3_11
+Added Pin To Net: NetName=NetK155-3_13 Pin=K155-3-13
+Added Pin To Net: NetName=NetK155-3_13 Pin=Nixie3-8
+Added Net: Name=NetK155-3_13
+Added Pin To Net: NetName=NetK155-3_14 Pin=K155-3-14
+Added Pin To Net: NetName=NetK155-3_14 Pin=Nixie3-7
+Added Net: Name=NetK155-3_14
+Added Pin To Net: NetName=NetK155-3_15 Pin=K155-3-15
+Added Pin To Net: NetName=NetK155-3_15 Pin=Nixie3-11
+Added Net: Name=NetK155-3_15
+Added Pin To Net: NetName=NetK155-3_16 Pin=K155-3-16
+Added Pin To Net: NetName=NetK155-3_16 Pin=Nixie3-2
+Added Net: Name=NetK155-3_16
+Added Pin To Net: NetName=NetK155-4_1 Pin=K155-4-1
+Added Pin To Net: NetName=NetK155-4_1 Pin=Nixie4-4
+Added Net: Name=NetK155-4_1
+Added Pin To Net: NetName=NetK155-4_2 Pin=K155-4-2
+Added Pin To Net: NetName=NetK155-4_2 Pin=Nixie4-3
+Added Net: Name=NetK155-4_2
+Added Pin To Net: NetName=NetK155-4_8 Pin=K155-4-8
+Added Pin To Net: NetName=NetK155-4_8 Pin=Nixie4-10
+Added Net: Name=NetK155-4_8
+Added Pin To Net: NetName=NetK155-4_9 Pin=K155-4-9
+Added Pin To Net: NetName=NetK155-4_9 Pin=Nixie4-9
+Added Net: Name=NetK155-4_9
+Added Pin To Net: NetName=NetK155-4_10 Pin=K155-4-10
+Added Pin To Net: NetName=NetK155-4_10 Pin=Nixie4-5
+Added Net: Name=NetK155-4_10
+Added Pin To Net: NetName=NetK155-4_11 Pin=K155-4-11
+Added Pin To Net: NetName=NetK155-4_11 Pin=Nixie4-6
+Added Net: Name=NetK155-4_11
+Added Pin To Net: NetName=NetK155-4_13 Pin=K155-4-13
+Added Pin To Net: NetName=NetK155-4_13 Pin=Nixie4-8
+Added Net: Name=NetK155-4_13
+Added Pin To Net: NetName=NetK155-4_14 Pin=K155-4-14
+Added Pin To Net: NetName=NetK155-4_14 Pin=Nixie4-7
+Added Net: Name=NetK155-4_14
+Added Pin To Net: NetName=NetK155-4_15 Pin=K155-4-15
+Added Pin To Net: NetName=NetK155-4_15 Pin=Nixie4-11
+Added Net: Name=NetK155-4_15
+Added Pin To Net: NetName=NetK155-4_16 Pin=K155-4-16
+Added Pin To Net: NetName=NetK155-4_16 Pin=Nixie4-2
+Added Net: Name=NetK155-4_16
+Added Pin To Net: NetName=NetK155-5_1 Pin=K155-5-1
+Added Pin To Net: NetName=NetK155-5_1 Pin=Nixie5-4
+Added Net: Name=NetK155-5_1
+Added Pin To Net: NetName=NetK155-5_2 Pin=K155-5-2
+Added Pin To Net: NetName=NetK155-5_2 Pin=Nixie5-3
+Added Net: Name=NetK155-5_2
+Added Pin To Net: NetName=NetK155-5_8 Pin=K155-5-8
+Added Pin To Net: NetName=NetK155-5_8 Pin=Nixie5-10
+Added Net: Name=NetK155-5_8
+Added Pin To Net: NetName=NetK155-5_9 Pin=K155-5-9
+Added Pin To Net: NetName=NetK155-5_9 Pin=Nixie5-9
+Added Net: Name=NetK155-5_9
+Added Pin To Net: NetName=NetK155-5_10 Pin=K155-5-10
+Added Pin To Net: NetName=NetK155-5_10 Pin=Nixie5-5
+Added Net: Name=NetK155-5_10
+Added Pin To Net: NetName=NetK155-5_11 Pin=K155-5-11
+Added Pin To Net: NetName=NetK155-5_11 Pin=Nixie5-6
+Added Net: Name=NetK155-5_11
+Added Pin To Net: NetName=NetK155-5_13 Pin=K155-5-13
+Added Pin To Net: NetName=NetK155-5_13 Pin=Nixie5-8
+Added Net: Name=NetK155-5_13
+Added Pin To Net: NetName=NetK155-5_14 Pin=K155-5-14
+Added Pin To Net: NetName=NetK155-5_14 Pin=Nixie5-7
+Added Net: Name=NetK155-5_14
+Added Pin To Net: NetName=NetK155-5_15 Pin=K155-5-15
+Added Pin To Net: NetName=NetK155-5_15 Pin=Nixie5-11
+Added Net: Name=NetK155-5_15
+Added Pin To Net: NetName=NetK155-5_16 Pin=K155-5-16
+Added Pin To Net: NetName=NetK155-5_16 Pin=Nixie5-2
+Added Net: Name=NetK155-5_16
+Added Pin To Net: NetName=NetK155-6_1 Pin=K155-6-1
+Added Pin To Net: NetName=NetK155-6_1 Pin=Nixie6-4
+Added Net: Name=NetK155-6_1
+Added Pin To Net: NetName=NetK155-6_2 Pin=K155-6-2
+Added Pin To Net: NetName=NetK155-6_2 Pin=Nixie6-3
+Added Net: Name=NetK155-6_2
+Added Pin To Net: NetName=NetK155-6_8 Pin=K155-6-8
+Added Pin To Net: NetName=NetK155-6_8 Pin=Nixie6-10
+Added Net: Name=NetK155-6_8
+Added Pin To Net: NetName=NetK155-6_9 Pin=K155-6-9
+Added Pin To Net: NetName=NetK155-6_9 Pin=Nixie6-9
+Added Net: Name=NetK155-6_9
+Added Pin To Net: NetName=NetK155-6_10 Pin=K155-6-10
+Added Pin To Net: NetName=NetK155-6_10 Pin=Nixie6-5
+Added Net: Name=NetK155-6_10
+Added Pin To Net: NetName=NetK155-6_11 Pin=K155-6-11
+Added Pin To Net: NetName=NetK155-6_11 Pin=Nixie6-6
+Added Net: Name=NetK155-6_11
+Added Pin To Net: NetName=NetK155-6_13 Pin=K155-6-13
+Added Pin To Net: NetName=NetK155-6_13 Pin=Nixie6-8
+Added Net: Name=NetK155-6_13
+Added Pin To Net: NetName=NetK155-6_14 Pin=K155-6-14
+Added Pin To Net: NetName=NetK155-6_14 Pin=Nixie6-7
+Added Net: Name=NetK155-6_14
+Added Pin To Net: NetName=NetK155-6_15 Pin=K155-6-15
+Added Pin To Net: NetName=NetK155-6_15 Pin=Nixie6-11
+Added Net: Name=NetK155-6_15
+Added Pin To Net: NetName=NetK155-6_16 Pin=K155-6-16
+Added Pin To Net: NetName=NetK155-6_16 Pin=Nixie6-2
+Added Net: Name=NetK155-6_16
+Added Pin To Net: NetName=NetK155-7_1 Pin=K155-7-1
+Added Pin To Net: NetName=NetK155-7_1 Pin=Nixie7-4
+Added Net: Name=NetK155-7_1
+Added Pin To Net: NetName=NetK155-7_2 Pin=K155-7-2
+Added Pin To Net: NetName=NetK155-7_2 Pin=Nixie7-3
+Added Net: Name=NetK155-7_2
+Added Pin To Net: NetName=NetK155-7_8 Pin=K155-7-8
+Added Pin To Net: NetName=NetK155-7_8 Pin=Nixie7-10
+Added Net: Name=NetK155-7_8
+Added Pin To Net: NetName=NetK155-7_9 Pin=K155-7-9
+Added Pin To Net: NetName=NetK155-7_9 Pin=Nixie7-9
+Added Net: Name=NetK155-7_9
+Added Pin To Net: NetName=NetK155-7_10 Pin=K155-7-10
+Added Pin To Net: NetName=NetK155-7_10 Pin=Nixie7-5
+Added Net: Name=NetK155-7_10
+Added Pin To Net: NetName=NetK155-7_11 Pin=K155-7-11
+Added Pin To Net: NetName=NetK155-7_11 Pin=Nixie7-6
+Added Net: Name=NetK155-7_11
+Added Pin To Net: NetName=NetK155-7_13 Pin=K155-7-13
+Added Pin To Net: NetName=NetK155-7_13 Pin=Nixie7-8
+Added Net: Name=NetK155-7_13
+Added Pin To Net: NetName=NetK155-7_14 Pin=K155-7-14
+Added Pin To Net: NetName=NetK155-7_14 Pin=Nixie7-7
+Added Net: Name=NetK155-7_14
+Added Pin To Net: NetName=NetK155-7_15 Pin=K155-7-15
+Added Pin To Net: NetName=NetK155-7_15 Pin=Nixie7-11
+Added Net: Name=NetK155-7_15
+Added Pin To Net: NetName=NetK155-7_16 Pin=K155-7-16
+Added Pin To Net: NetName=NetK155-7_16 Pin=Nixie7-2
+Added Net: Name=NetK155-7_16
+Added Pin To Net: NetName=NetK155-8_1 Pin=K155-8-1
+Added Pin To Net: NetName=NetK155-8_1 Pin=Nixie8-4
+Added Net: Name=NetK155-8_1
+Added Pin To Net: NetName=NetK155-8_2 Pin=K155-8-2
+Added Pin To Net: NetName=NetK155-8_2 Pin=Nixie8-3
+Added Net: Name=NetK155-8_2
+Added Pin To Net: NetName=NetK155-8_8 Pin=K155-8-8
+Added Pin To Net: NetName=NetK155-8_8 Pin=Nixie8-10
+Added Net: Name=NetK155-8_8
+Added Pin To Net: NetName=NetK155-8_9 Pin=K155-8-9
+Added Pin To Net: NetName=NetK155-8_9 Pin=Nixie8-9
+Added Net: Name=NetK155-8_9
+Added Pin To Net: NetName=NetK155-8_10 Pin=K155-8-10
+Added Pin To Net: NetName=NetK155-8_10 Pin=Nixie8-5
+Added Net: Name=NetK155-8_10
+Added Pin To Net: NetName=NetK155-8_11 Pin=K155-8-11
+Added Pin To Net: NetName=NetK155-8_11 Pin=Nixie8-6
+Added Net: Name=NetK155-8_11
+Added Pin To Net: NetName=NetK155-8_13 Pin=K155-8-13
+Added Pin To Net: NetName=NetK155-8_13 Pin=Nixie8-8
+Added Net: Name=NetK155-8_13
+Added Pin To Net: NetName=NetK155-8_14 Pin=K155-8-14
+Added Pin To Net: NetName=NetK155-8_14 Pin=Nixie8-7
+Added Net: Name=NetK155-8_14
+Added Pin To Net: NetName=NetK155-8_15 Pin=K155-8-15
+Added Pin To Net: NetName=NetK155-8_15 Pin=Nixie8-11
+Added Net: Name=NetK155-8_15
+Added Pin To Net: NetName=NetK155-8_16 Pin=K155-8-16
+Added Pin To Net: NetName=NetK155-8_16 Pin=Nixie8-2
+Added Net: Name=NetK155-8_16
+Added Pin To Net: NetName=V5 Pin=K155-1-5
+Added Pin To Net: NetName=V5 Pin=K155-2-5
+Added Pin To Net: NetName=V5 Pin=K155-3-5
+Added Pin To Net: NetName=V5 Pin=K155-4-5
+Added Pin To Net: NetName=V5 Pin=K155-5-5
+Added Pin To Net: NetName=V5 Pin=K155-6-5
+Added Pin To Net: NetName=V5 Pin=K155-7-5
+Added Pin To Net: NetName=V5 Pin=K155-8-5
+Added Net: Name=V5
+Added Pin To Net: NetName=V170 Pin=Nixie1-1
+Added Pin To Net: NetName=V170 Pin=Nixie2-1
+Added Pin To Net: NetName=V170 Pin=Nixie3-1
+Added Pin To Net: NetName=V170 Pin=Nixie4-1
+Added Pin To Net: NetName=V170 Pin=Nixie5-1
+Added Pin To Net: NetName=V170 Pin=Nixie6-1
+Added Pin To Net: NetName=V170 Pin=Nixie7-1
+Added Pin To Net: NetName=V170 Pin=Nixie8-1
+Added Net: Name=V170
+Added Class: Name=Sheet1
+Added Room: Name=Sheet1
