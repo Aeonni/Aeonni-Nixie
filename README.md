@@ -13,6 +13,6 @@
 
 ## Notice
 
-⚠️  In case of privacy issues, all the files in `Inori_On_Nixie` directory has been removed. The remain parts can work without `Inori_On_Nixie`(just remove lines require `Inori_On_Nixie` in `main.py`)
+⚠️  In case of privacy issues, all the files in `Inori_On_Nixie` directory has been removed. The remain parts can work without `Inori_On_Nixie`(just remove lines require `Inori_On_Nixie` in `main.py`)
 
-✅  You can see document written in Chinese in [my blog](https://www.aeonni.com/2018/12/31/aeonni-nixie-finish/)
+✅  You can see document written in Chinese in [my blog](https://www.aeonni.com/2018/12/31/aeonni-nixie-finish/)
