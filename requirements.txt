@@ -98,5 +98,5 @@ unicornhathd==0.0.3
 urllib3==1.19.1
 wcwidth==0.1.7
 webencodings==0.5
-Werkzeug==0.11.15
+Werkzeug==0.15.3
 wordcloud==1.5.0
