@@ -37,7 +37,7 @@ mote==0.0.3
 motephat==0.0.2
 msgpack==0.5.6
 numexpr==2.6.1
-numpy==1.12.1
+numpy==1.21.0
 oauthlib==2.0.1
 pandas==0.19.2
 pantilthat==0.0.6
